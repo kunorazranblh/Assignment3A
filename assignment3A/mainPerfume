@@ -1,8 +1,13 @@
+
 public class mainPerfume{
 	
 	public static void main(String[] args) {
 
      Perfume f = new Perfume("For Him", "For Her");
+     
+     priceOfPerfume p = new priceOfPerfume();
+     
+     onlineshop o = new onlineshop();
 
      PerfumeBrand b = new PerfumeBrand ("DKNY", "CK", "Victoria Secret", "Givenchy", "Bulgari", "Hugo Boss");
      
@@ -11,23 +16,29 @@ public class mainPerfume{
 System.out.println("Type of Perfume: " + f.getForMan());
 b.run();
 System.out.println(b.getBrand1());
-
+p.priceDKNY();
 System.out.println(b.getBrand5());
-
+p.priceBulgari();
 System.out.println(b.getBrand6());
+p.priceHugoBoss();
+o.onlineShop(); //ABSTRACTION
+o.onlineshopp();
 System.out.println("");
 
 System.out.println("Type of Perfume: " + f.getForWoman());
 b.run1();
 System.out.println(b.getBrand1());
-
+p.priceDKNY();
 System.out.println(b.getBrand2());
-
+p.priceCK();
 System.out.println(b.getBrand3());
-
+p.priceVictoriaSecret();
 System.out.println(b.getBrand4());
-
+p.priceGivenchy();
 System.out.println(b.getBrand5());
+p.priceBulgari();
+o.onlineShop(); //ABSTRACTION
+o.onlineshopp();
 System.out.println("");
 
 	}
