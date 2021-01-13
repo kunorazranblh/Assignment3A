@@ -1,0 +1,9 @@
+public class onlineshop extends TypeOfBrand {
+	    
+	    public void onlineshopp()
+	    {
+	    	
+	        System.out.println("Shopee");
+	    }
+
+}
